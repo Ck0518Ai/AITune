@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AITune — AI가 조율하는 새로운 음악의 미래</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p class="announcement-text">
+      런칭 기념 — AITune 프리미엄 번들 <strong>30% 할인</strong> 중!
+    </p>
+    <div class="announcement-actions">
+      <a href="#" class="btn-announcement">번들 구매</a>
+      <a href="#" class="btn-announcement">무료 샘플</a>
+    </div>
+    <button class="announcement-close" aria-label="닫기">&times;</button>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="logo">
+        <span class="logo-wordmark">
+          <span class="logo-ai">AI<span class="logo-sparkle">✦</span></span><span class="logo-tune">Tune</span>
+        </span>
+        <svg class="logo-wave" viewBox="0 0 48 24" fill="none">
+          <path d="M2 12 Q8 4, 14 12 T26 12 T38 12 T46 12" stroke="url(#waveGrad)" stroke-width="2.5" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="waveGrad" x1="0" y1="0" x2="48" y2="0">
+              <stop offset="0%" stop-color="#00d2ff"/>
+              <stop offset="100%" stop-color="#9d50bb"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#about">소개</a></li>
+          <li class="has-dropdown">
+            <a href="#featured">카탈로그 <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+          </li>
+          <li class="has-dropdown">
+            <a href="#">장르 <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></a>
+          </li>
+          <li><a href="#">문의</a></li>
+        </ul>
+        <div class="nav-actions-mobile">
+          <a href="#" class="btn btn-primary">지금 구매</a>
+          <a href="#" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            무료 미리듣기
+          </a>
+        </div>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn btn-primary">지금 구매</a>
+        <a href="#" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          무료 미리듣기
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img
+        src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=900&q=80"
+        alt="AITune AI 음악 플랫폼"
+        class="hero-image"
+      >
+      <div class="hero-gradient"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-subtitle">Tune Your Future with AI</p>
+      <h1 class="hero-title">
+        <span class="hero-ai">AI</span><span class="hero-tune">Tune</span>
+      </h1>
+      <p class="hero-description">
+        AI가 조율하는 새로운 음악의 미래. AITune에서 AI 생성 곡을 만들고, 발견하고,
+        구매하고, 판매하세요.
+      </p>
+      <a href="#featured" class="btn btn-primary btn-hero">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        트랙 둘러보기
+      </a>
+    </div>
+
+    <div class="hero-badge">
+      <div class="badge-avatars">
+        <img src="https://i.pravatar.cc/40?img=11" alt="구매자">
+        <img src="https://i.pravatar.cc/40?img=12" alt="구매자">
+        <img src="https://i.pravatar.cc/40?img=13" alt="구매자">
+        <img src="https://i.pravatar.cc/40?img=14" alt="구매자">
+      </div>
+      <p class="badge-text"><strong>4,800명+</strong> 만족한 크리에이터</p>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="stats">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </div>
+        <div class="stat-info">
+          <span class="stat-number" data-target="4830">0</span>
+          <span class="stat-label">판매된 트랙</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div class="stat-info">
+          <span class="stat-number" data-target="90" data-suffix="+">0</span>
+          <span class="stat-label">장르</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </div>
+        <div class="stat-info">
+          <span class="stat-number" data-target="3065">0</span>
+          <span class="stat-label">다운로드</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div class="stat-info">
+          <span class="stat-number" data-target="150" data-suffix="+">0</span>
+          <span class="stat-label">크리에이터</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="stat-info">
+          <span class="stat-number" data-target="98" data-suffix="%">0</span>
+          <span class="stat-label">만족도</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Brand Introduction -->
+  <section class="about" id="about">
+
+    <!-- 01 Brand Introduction -->
+    <div class="about-intro">
+      <div class="about-intro-inner">
+        <span class="about-label">Brand Introduction</span>
+        <p class="about-slogan-en">Tune Your Future with AI</p>
+        <h2 class="about-slogan-ko">AI가 조율하는 새로운 음악의 미래</h2>
+        <p class="about-desc">
+          AITune은 AI와 음악(Music)의 조화로, 새로운 멜로디의 미래를 여는 음악 플랫폼입니다.
+          AI가 만든 곡을 창작하고, 발견하고, 구매하고, 판매할 수 있는 올인원 공간입니다.
+          기술과 감성이 만나는 곳에서 당신만의 사운드를 완성하세요.
+        </p>
+      </div>
+    </div>
+
+    <!-- 02 Meaning of Name -->
+    <div class="about-meaning">
+      <div class="about-meaning-inner">
+        <div class="meaning-visual">
+          <div class="meaning-sphere">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 18V5l12-2v13"/>
+              <circle cx="6" cy="18" r="3"/>
+              <circle cx="18" cy="16" r="3"/>
+            </svg>
+          </div>
+        </div>
+        <div class="meaning-content">
+          <span class="section-label">Meaning of Name</span>
+          <h3 class="meaning-title"><span>AI</span> + <span>Tune</span> = AITune</h3>
+          <div class="meaning-items">
+            <div class="meaning-item">
+              <strong>AI</strong>
+              <p>인공지능이 열어가는 음악의 새로운 가능성. 다양한 장르와 스타일의 곡을 AI가 창작합니다.</p>
+            </div>
+            <div class="meaning-item">
+              <strong>Tune</strong>
+              <p>멜로디와 노래를 조율하여 감성을 연결하는 힘. 당신의 프로젝트에 완벽히 맞는 사운드를 찾아줍니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03 Service Overview -->
+    <div class="about-flow">
+      <div class="about-flow-inner">
+        <span class="section-label">Service Overview</span>
+        <h2 class="section-title">AITune의 4가지 핵심 서비스</h2>
+        <p class="section-subtitle">창작부터 수익화까지, 음악의 전 과정을 한곳에서</p>
+        <div class="flow-grid">
+          <article class="flow-card">
+            <div class="flow-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+            </div>
+            <p class="flow-step">Step 01</p>
+            <h3 class="flow-title">Create</h3>
+            <p class="flow-desc">AI 작곡으로 다양한 장르의 곡을 생성하세요. 원하는 분위기만 입력하면 맞춤 멜로디가 완성됩니다.</p>
+          </article>
+          <article class="flow-card">
+            <div class="flow-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <p class="flow-step">Step 02</p>
+            <h3 class="flow-title">Discover</h3>
+            <p class="flow-desc">무드와 스타일로 곡을 검색하세요. 수천 곡의 AI 트랙 중 프로젝트에 딱 맞는 사운드를 발견합니다.</p>
+          </article>
+          <article class="flow-card">
+            <div class="flow-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <p class="flow-step">Step 03</p>
+            <h3 class="flow-title">Buy</h3>
+            <p class="flow-desc">간편한 결제로 즉시 이용하세요. 구매 즉시 다운로드하고 상업 라이선스까지 바로 적용됩니다.</p>
+          </article>
+          <article class="flow-card">
+            <div class="flow-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <p class="flow-step">Step 04</p>
+            <h3 class="flow-title">Sell</h3>
+            <p class="flow-desc">크리에이터로 등록하고 수익을 창출하세요. 내가 만든 AI 곡을 등록해 전 세계에 판매할 수 있습니다.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 Core Values -->
+    <div class="about-values">
+      <div class="about-values-inner">
+        <span class="section-label">Core Values</span>
+        <h2 class="section-title">AITune이 추구하는 가치</h2>
+        <div class="values-grid">
+          <article class="value-card">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>
+            </div>
+            <h3 class="value-title">Innovation</h3>
+            <p class="value-desc">음악 기술의 새로운 패러다임을 제시합니다.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="value-title">Emotion</h3>
+            <p class="value-desc">기술과 인간의 감성을 연결합니다.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="value-title">Diversity</h3>
+            <p class="value-desc">모든 장르와 스타일을 아우릅니다.</p>
+          </article>
+          <article class="value-card">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <h3 class="value-title">Growth</h3>
+            <p class="value-desc">크리에이터와 사용자가 함께 성장하는 생태계.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 Logo Story -->
+    <div class="about-logo-story">
+      <div class="about-logo-story-inner">
+        <span class="section-label">Logo Introduction</span>
+        <div class="logo-showcase">
+          <span class="logo-ai">AI<span class="logo-sparkle">✦</span></span><span class="logo-tune">Tune</span>
+          <svg class="logo-wave" viewBox="0 0 48 24" fill="none">
+            <path d="M2 12 Q8 4, 14 12 T26 12 T38 12 T46 12" stroke="url(#waveGrad2)" stroke-width="2.5" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="waveGrad2" x1="0" y1="0" x2="48" y2="0">
+                <stop offset="0%" stop-color="#00d2ff"/>
+                <stop offset="100%" stop-color="#9d50bb"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-story-items">
+          <div class="logo-story-item">
+            <h4>미래지향적 AI</h4>
+            <p>그라데이션으로 표현된 'AI'는 첨단 기술과 무한한 창의성을 상징합니다. 반짝이는 별은 빛나는 가치를 나타냅니다.</p>
+          </div>
+          <div class="logo-story-item">
+            <h4>음악의 흐름</h4>
+            <p>사운드웨이브 그래픽은 멜로디의 리듬과 흐름을 시각화합니다. 블루-퍼플 그라데이션은 AI와 음악의 조화를 표현합니다.</p>
+          </div>
+          <div class="logo-story-item">
+            <h4>조율하는 Tune</h4>
+            <p>깔끔한 화이트 'Tune'은 감성과 기술을 조율하여 완성된 사운드를 전달한다는 브랜드 철학을 담고 있습니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <h2 class="section-title">더 깊이 알아보기</h2>
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="servicesTrack">
+          <article class="service-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/></svg>
+            </div>
+            <h3 class="card-title">AI 작곡 스튜디오</h3>
+            <p class="card-desc">텍스트 프롬프트만으로 팝, 힙합, 일렉트로닉 등 다양한 장르의 곡을 즉시 생성합니다.</p>
+            <a href="#" class="btn-card">
+              <span class="btn-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              자세히 보기
+            </a>
+          </article>
+          <article class="service-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="card-title">스마트 검색 & 추천</h3>
+            <p class="card-desc">분위기, BPM, 장르로 필터링하여 프로젝트에 최적화된 트랙을 빠르게 찾아드립니다.</p>
+            <a href="#" class="btn-card">
+              <span class="btn-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              자세히 보기
+            </a>
+          </article>
+          <article class="service-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <h3 class="card-title">간편 결제 & 라이선스</h3>
+            <p class="card-desc">원클릭 결제 후 즉시 다운로드. 유튜브, 광고, 게임 등 상업적 이용 라이선스 포함.</p>
+            <a href="#" class="btn-card">
+              <span class="btn-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              자세히 보기
+            </a>
+          </article>
+          <article class="service-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="card-title">크리에이터 수익화</h3>
+            <p class="card-desc">내 AI 곡을 마켓플레이스에 등록하고 판매 수익을 정산받으세요. 누구나 크리에이터가 될 수 있습니다.</p>
+            <a href="#" class="btn-card">
+              <span class="btn-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+              자세히 보기
+            </a>
+          </article>
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <button class="carousel-btn" id="servicesPrev" aria-label="이전">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="carousel-btn carousel-btn--active" id="servicesNext" aria-label="다음">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Tracks -->
+  <section class="featured" id="featured">
+    <div class="section-inner">
+      <h2 class="section-title">인기 트랙</h2>
+      <div class="featured-grid">
+        <article class="track-card">
+          <div class="track-cover">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&q=80" alt="Neon Dreams">
+            <button class="track-play" aria-label="미리듣기">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+          </div>
+          <div class="track-info">
+            <h3 class="track-title">Neon Dreams</h3>
+            <p class="track-artist">AITune · Synthwave</p>
+            <div class="track-footer">
+              <span class="track-price">₩9,900</span>
+              <a href="#" class="btn btn-primary btn-sm">구매하기</a>
+            </div>
+          </div>
+        </article>
+        <article class="track-card">
+          <div class="track-cover">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=400&q=80" alt="Midnight Pulse">
+            <button class="track-play" aria-label="미리듣기">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+          </div>
+          <div class="track-info">
+            <h3 class="track-title">Midnight Pulse</h3>
+            <p class="track-artist">AITune · Electronic</p>
+            <div class="track-footer">
+              <span class="track-price">₩12,900</span>
+              <a href="#" class="btn btn-primary btn-sm">구매하기</a>
+            </div>
+          </div>
+        </article>
+        <article class="track-card">
+          <div class="track-cover">
+            <img src="https://images.unsplash.com/photo-1514320291840-755e8370f88a?w=400&q=80" alt="Golden Hour">
+            <button class="track-play" aria-label="미리듣기">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+          </div>
+          <div class="track-info">
+            <h3 class="track-title">Golden Hour</h3>
+            <p class="track-artist">AITune · Lo-Fi</p>
+            <div class="track-footer">
+              <span class="track-price">₩7,900</span>
+              <a href="#" class="btn btn-primary btn-sm">구매하기</a>
+            </div>
+          </div>
+        </article>
+        <article class="track-card">
+          <div class="track-cover">
+            <img src="https://images.unsplash.com/photo-1459749411177-041180c24e73?w=400&q=80" alt="Urban Flow">
+            <button class="track-play" aria-label="미리듣기">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+          </div>
+          <div class="track-info">
+            <h3 class="track-title">Urban Flow</h3>
+            <p class="track-artist">AITune · Hip-Hop</p>
+            <div class="track-footer">
+              <span class="track-price">₩11,900</span>
+              <a href="#" class="btn btn-primary btn-sm">구매하기</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-ai">AI<span class="logo-sparkle">✦</span></span><span class="logo-tune">Tune</span>
+        </div>
+        <p class="footer-tagline">AI가 조율하는 새로운 음악의 미래. Tune Your Future with AI.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>서비스</h4>
+          <a href="#">AI 작곡</a>
+          <a href="#">카탈로그</a>
+          <a href="#">크리에이터 등록</a>
+        </div>
+        <div class="footer-col">
+          <h4>지원</h4>
+          <a href="#">FAQ</a>
+          <a href="#">문의하기</a>
+          <a href="#">이용약관</a>
+        </div>
+        <div class="footer-col">
+          <h4>소셜</h4>
+          <a href="#">YouTube</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AITune. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="맨 위로">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
