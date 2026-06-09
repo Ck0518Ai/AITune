@@ -80,38 +80,83 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-bg">
-      <img
-        src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=900&q=80"
-        alt="AITune AI 음악 플랫폼"
-        class="hero-image"
-      >
-      <div class="hero-gradient"></div>
+    <div class="hero-ambient">
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-orb hero-orb--3"></div>
     </div>
 
-    <div class="hero-content">
-      <p class="hero-subtitle">Tune Your Future with AI</p>
-      <h1 class="hero-title">
-        <span class="hero-ai">AI</span><span class="hero-tune">Tune</span>
-      </h1>
-      <p class="hero-description">
-        AI가 조율하는 새로운 음악의 미래. AITune에서 AI 생성 곡을 만들고, 발견하고,
-        구매하고, 판매하세요.
-      </p>
-      <a href="#featured" class="btn btn-primary btn-hero">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        트랙 둘러보기
-      </a>
-    </div>
-
-    <div class="hero-badge">
-      <div class="badge-avatars">
-        <img src="https://i.pravatar.cc/40?img=11" alt="구매자">
-        <img src="https://i.pravatar.cc/40?img=12" alt="구매자">
-        <img src="https://i.pravatar.cc/40?img=13" alt="구매자">
-        <img src="https://i.pravatar.cc/40?img=14" alt="구매자">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-subtitle">Tune Your Future with AI</p>
+        <h1 class="hero-title">
+          <span class="hero-ai">AI</span><span class="hero-tune">Tune</span>
+        </h1>
+        <p class="hero-description">
+          AI가 조율하는 새로운 음악의 미래. AITune에서 AI 생성 곡을 만들고, 발견하고,
+          구매하고, 판매하세요.
+        </p>
+        <div class="hero-actions">
+          <a href="#featured" class="btn btn-primary btn-hero">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            트랙 둘러보기
+          </a>
+          <a href="#about" class="btn btn-outline btn-hero-secondary">서비스 소개</a>
+        </div>
+        <div class="hero-tags">
+          <span class="hero-tag">Synthwave</span>
+          <span class="hero-tag">Lo-Fi</span>
+          <span class="hero-tag">Hip-Hop</span>
+          <span class="hero-tag">Electronic</span>
+        </div>
+        <div class="hero-badge">
+          <div class="badge-avatars">
+            <img src="https://i.pravatar.cc/40?img=11" alt="구매자">
+            <img src="https://i.pravatar.cc/40?img=12" alt="구매자">
+            <img src="https://i.pravatar.cc/40?img=13" alt="구매자">
+            <img src="https://i.pravatar.cc/40?img=14" alt="구매자">
+          </div>
+          <p class="badge-text"><strong>4,800명+</strong> 만족한 크리에이터</p>
+        </div>
       </div>
-      <p class="badge-text"><strong>4,800명+</strong> 만족한 크리에이터</p>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-disc">
+          <div class="hero-disc-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+            </svg>
+          </div>
+        </div>
+        <div class="hero-equalizer">
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <svg class="hero-waveform" viewBox="0 0 200 60" fill="none">
+          <path d="M0 30 Q25 10, 50 30 T100 30 T150 30 T200 30" stroke="url(#heroWaveGrad)" stroke-width="2" stroke-linecap="round"/>
+          <path d="M0 35 Q25 55, 50 35 T100 35 T150 35 T200 35" stroke="url(#heroWaveGrad2)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+          <defs>
+            <linearGradient id="heroWaveGrad" x1="0" y1="0" x2="200" y2="0">
+              <stop offset="0%" stop-color="#00d2ff"/><stop offset="100%" stop-color="#9d50bb"/>
+            </linearGradient>
+            <linearGradient id="heroWaveGrad2" x1="0" y1="0" x2="200" y2="0">
+              <stop offset="0%" stop-color="#9d50bb"/><stop offset="100%" stop-color="#00d2ff"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="hero-float-card hero-float-card--1">
+          <span class="float-icon">▶</span>
+          <div>
+            <strong>Now Playing</strong>
+            <p>Neon Dreams · AI</p>
+          </div>
+        </div>
+        <div class="hero-float-card hero-float-card--2">
+          <span class="float-num">4.8k+</span>
+          <p>활성 크리에이터</p>
+        </div>
+      </div>
     </div>
   </section>
 
